@@ -8,17 +8,17 @@ interface ServiceItemProps {
   isActive?: boolean;
 }
 
-export const ServiceItem = ({ 
-  title, 
-  titleHighlight, 
-  description, 
+export const ServiceItem = ({
+  title,
+  titleHighlight,
+  description,
   comingSoon = false,
-  isActive = false 
+  isActive = false
 }: ServiceItemProps) => {
   return (
-    <div className="border-b-2 border-[#6534244D] py-5">
-      <div className="flex items-center gap-3">
-        <h3 className="font-serif text-xl md:text-2xl font-semibold">
+    <div className="border-b-2 border-[#6534244D] py-4 sm:py-5">
+      <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+        <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-semibold">
           {titleHighlight ? (
             <>
               <span className="text-foreground">{title}</span>{" "}
@@ -31,7 +31,7 @@ export const ServiceItem = ({
         {comingSoon && <SectionBadge variant="coming-soon">Coming soon</SectionBadge>}
       </div>
       {description && isActive && (
-        <p className="mt-4 text-muted-foreground font-semibold text-lg lg:text-xl leading-relaxed max-w-lg">
+        <p className="mt-3 sm:mt-4 text-muted-foreground font-semibold text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg">
           {description}
         </p>
       )}

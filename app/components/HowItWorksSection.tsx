@@ -48,17 +48,17 @@ const StepCard = ({ step }: { step: (typeof STEPS)[number] }) => {
   return (
     <div className="text-center relative">
       {/* Icon */}
-      <div className="relative z-10 mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-[#FAF8F533] bg-[#FAF8F51A] backdrop-blur-sm">
-        <Icon className={ICON_PROPS} />
+      <div className="relative z-10 mx-auto mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 items-center justify-center rounded-lg sm:rounded-xl border border-[#FAF8F533] bg-[#FAF8F51A] backdrop-blur-sm">
+        <Icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
       </div>
 
       {/* Number (connector anchor) */}
-      <span className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-white text-lg font-bold text-ravella-brown">
+      <span className="mx-auto mb-2 sm:mb-3 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-white text-base sm:text-lg font-bold text-ravella-brown">
         {number}
       </span>
 
-      <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
-      <p className="px-4 text-lg leading-relaxed text-white">{description}</p>
+      <h3 className="mb-1.5 sm:mb-2 text-base sm:text-lg lg:text-xl font-semibold text-white">{title}</h3>
+      <p className="px-3 sm:px-4 text-sm sm:text-base lg:text-lg leading-relaxed text-white">{description}</p>
     </div>
   );
 };
@@ -72,10 +72,10 @@ const StepsRow = ({
   cols: string;
   connectorInset?: string;
 }) => (
-  <div className={`relative grid ${cols} gap-8 mb-16`}>
+  <div className={`relative grid ${cols} gap-6 sm:gap-8 mb-10 sm:mb-12 lg:mb-16`}>
     {/* Connector line (numbers axis) */}
     <div
-      className={`hidden md:block absolute top-[110px] h-px bg-white/30 ${connectorInset}`}
+      className={`hidden md:block absolute top-[90px] sm:top-[100px] lg:top-[110px] h-px bg-white/30 ${connectorInset}`}
     />
     {steps.map((step) => (
       <StepCard key={step.number} step={step} />
@@ -87,13 +87,13 @@ const HowItWorksSection = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* HOW IT WORKS */}
-      <section className="relative mt-8 rounded-[70px] bg-[#814C31] px-6 pt-16 pb-12 lg:mt-12">
-        <div className="mb-16 text-center">
+      <section className="relative mt-6 sm:mt-8 lg:mt-12 rounded-[40px] sm:rounded-[50px] lg:rounded-[70px] bg-[#814C31] px-4 sm:px-6 lg:px-12 pt-10 sm:pt-12 lg:pt-16 pb-10 sm:pb-12">
+        <div className="mb-10 sm:mb-12 lg:mb-16 text-center">
           <SectionBadge variant="automated">How It Works</SectionBadge>
-          <h1 className="mb-4 text-5xl font-bold text-white md:text-6xl">
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white lg:text-6xl">
             Simple. Smart. <span className="text-[#FF9801]">Automated.</span>
           </h1>
-          <p className="text-xl text-[#FFFFFFB2]">
+          <p className="text-base sm:text-lg lg:text-xl text-[#FFFFFFB2] px-4">
             Five simple steps to transform your health and wealth journey.
           </p>
         </div>
@@ -112,33 +112,33 @@ const HowItWorksSection = () => {
         <img
           src="/group-how-it-works.png"
           alt=""
-          className="pointer-events-none absolute bottom-0 right-0 hidden w-16 opacity-80 md:block"
+          className="pointer-events-none absolute bottom-0 right-0 hidden w-12 sm:w-14 lg:w-16 opacity-80 md:block"
         />
       </section>
 
       {/* COMPENSATION PLAN */}
-      <section className="relative mt-8 rounded-[70px] bg-[#F6F0ED] lg:mt-12">
+      <section className="relative mt-6 sm:mt-8 lg:mt-12 rounded-[40px] sm:rounded-[50px] lg:rounded-[70px] bg-[#F6F0ED]">
         <img
           src="/group-how-it-works.png"
           alt=""
-          className="pointer-events-none absolute left-0 top-0 hidden w-16 opacity-80 md:block"
+          className="pointer-events-none absolute left-0 top-0 hidden w-12 sm:w-14 lg:w-16 opacity-80 md:block"
         />
 
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <div className="mb-12 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 py-10 sm:py-12 lg:py-16">
+          <div className="mb-8 sm:mb-10 lg:mb-12 text-center">
             <SectionBadge>Compensation Plan</SectionBadge>
-            <h2 className="mb-4 text-4xl font-bold text-[#32241B] md:text-5xl">
+            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#32241B] lg:text-5xl">
               We Offer 15 Unique
               <br />
               Earning <span className="text-[#653424]">Opportunities</span>
             </h2>
-            <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
+            <p className="mx-auto max-w-2xl text-base sm:text-lg lg:text-xl text-muted-foreground px-4">
               Every step you take is a reward. Live Healthy with our products,
               Live Wealthy with our robust pay plan.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               [
                 "Direct Referral Rewards",
@@ -155,25 +155,25 @@ const HowItWorksSection = () => {
             ].map(([title, desc], i) => (
               <div
                 key={title}
-                className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm"
+                className="rounded-lg sm:rounded-xl border border-gray-100 bg-white p-4 sm:p-5 lg:p-6 shadow-sm"
               >
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-[#814C311A]">
-                  <span className="text-lg font-bold text-[#653424]">
+                <div className="mb-3 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-lg sm:rounded-xl bg-[#814C311A]">
+                  <span className="text-base sm:text-lg font-bold text-[#653424]">
                     {i + 1}
                   </span>
                 </div>
-                <h3 className="mb-2 text-2xl font-bold text-gray-900">
+                <h3 className="mb-1.5 sm:mb-2 text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
                   {title}
                 </h3>
-                <p className="text-lg leading-relaxed font-semibold text-muted-foreground">
+                <p className="text-sm sm:text-base lg:text-lg leading-relaxed font-semibold text-muted-foreground">
                   {desc}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 text-center">
-            <button className="inline-flex items-center gap-2 rounded-lg bg-[#653424] px-8 py-3 font-semibold text-white transition-colors hover:bg-amber-900">
+          <div className="mt-8 sm:mt-10 text-center">
+            <button className="inline-flex items-center gap-2 rounded-lg bg-[#653424] px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white transition-colors hover:bg-amber-900 w-full sm:w-auto">
               View Full Compensation Plan
               <Play className="h-4 w-4 fill-current text-gray-300" />
             </button>

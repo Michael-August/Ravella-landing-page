@@ -38,22 +38,21 @@ const Header = () => {
     <>
       {/* HEADER */}
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-          isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-sm"
-            : "bg-background"
-        }`}
+        className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-sm"
+          : "bg-background"
+          }`}
         style={{ height: HEADER_HEIGHT }}
       >
-        <div className="h-full flex items-center justify-between px-4 sm:px-6 lg:px-24">
+        <div className="h-full flex items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-24">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
             <img
               src="/ravella-logo.png"
               alt="Ravella"
-              className="h-14 w-auto rounded-lg"
+              className="h-12 w-auto rounded-lg"
             />
-            <span className="text-2xl font-bold text-[#3A241D]">
+            <span className="text-xl font-bold text-[#3A241D]">
               Ravella
             </span>
           </a>
@@ -64,7 +63,7 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[17px] font-medium text-foreground hover:text-[#5A2D1B] transition"
+                className="xl:text-[17px] lg:text-[15px] text-[13px] font-medium text-foreground hover:text-[#5A2D1B] transition"
               >
                 {link.name}
               </a>
@@ -73,9 +72,9 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex">
-            <Button className="bg-[#653424] text-[17px] text-white rounded-xl px-6 gap-2">
+            <Button className="bg-[#653424] xl:text-[17px] lg:text-[15px] text-[13px] text-white rounded-xl px-6 gap-2">
               Login / Back Office
-              <Play className="h-4 w-4 text-gray-400 fill-current" />
+              <Play className="h-4 w-4 text-gray-200 fill-current" />
             </Button>
           </div>
 
@@ -97,11 +96,10 @@ const Header = () => {
 
       {/* MOBILE MENU */}
       <div
-        className={`fixed inset-x-0 z-40 lg:hidden transition-opacity duration-300 ${
-          isMobileMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-x-0 z-40 lg:hidden transition-opacity duration-300 ${isMobileMenuOpen
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+          }`}
         style={{
           top: HEADER_HEIGHT,
           height: `calc(100dvh - ${HEADER_HEIGHT}px)`,

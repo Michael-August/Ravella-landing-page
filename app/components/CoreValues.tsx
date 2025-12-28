@@ -5,7 +5,7 @@ const CoreValues = () => {
     <section className="py-10 lg:py-10 bg-background">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center md:mb-16 mb-8">
           <div className="inline-flex items-center rounded-full  bg-ravella-brown/20 px-4 py-1.5 mb-6">
             <span className="text-[16px] font-semibold text-ravella-brown">
               C-Value
@@ -30,7 +30,7 @@ const CoreValues = () => {
               alt="Ravella Core Values"
               fill
               priority
-            //   sizes="(max-width: 768px) 100vw, 1200px"
+              //   sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
             />
           </div>
