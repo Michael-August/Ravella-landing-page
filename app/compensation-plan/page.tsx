@@ -1,0 +1,24 @@
+import Header from "@/app/components/Header";
+import PageHeader from "@/app/components/PageHeader";
+import TestimonialSection from "@/app/components/TestimonialSection";
+import Footer from "@/app/components/Footer";
+import { OurProcessSection } from "@/app/components/OurProcessSection";
+
+export const metadata = {
+  title: "Compensation Plan - Ravella",
+  description: "Learn about our transparent compensation structure.",
+};
+
+export default function CompensationPlanPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <PageHeader title="Compensation Plan" breadcrumb="Home / Compensation Plan" />
+      <main className="px-6 lg:px-24 py-12">
+        <OurProcessSection />
+      </main>
+      <TestimonialSection />
+      <Footer />
+    </div>
+  );
+}

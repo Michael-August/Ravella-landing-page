@@ -26,12 +26,12 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Products", href: "#products" },
-    { name: "Compensation Plan", href: "#compensation" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Products", href: "/products" },
+    { name: "Compensation Plan", href: "/compensation-plan" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (

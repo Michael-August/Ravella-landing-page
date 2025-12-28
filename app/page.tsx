@@ -29,8 +29,8 @@ export default function Home() {
         <OurProduct />
         <HowItWorksSection />
         <OurCommunity />
-        <TestimonialSection />
       </main>
+      <TestimonialSection />
       <Footer />
     </div>
   );
