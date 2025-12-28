@@ -1,5 +1,7 @@
 import Header from "@/app/components/Header";
 import PageHeader from "@/app/components/PageHeader";
+import Footer from "../components/Footer";
+import RavellaContactSection from "../components/contact/ContactForm";
 
 export const metadata = {
   title: "Contact Us - Ravella",
@@ -10,14 +12,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHeader title="Contact" breadcrumb="Home / Contact" />
+      <PageHeader title="Get In Touch" breadcrumb="Home / Contact" />
       <main className="px-6 lg:px-24 py-12">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-lg text-foreground">
-            Contact page content coming soon...
-          </p>
-        </div>
+        <RavellaContactSection />
       </main>
+      <Footer />
     </div>
   );
 }

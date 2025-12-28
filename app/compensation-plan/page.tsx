@@ -3,6 +3,7 @@ import PageHeader from "@/app/components/PageHeader";
 import TestimonialSection from "@/app/components/TestimonialSection";
 import Footer from "@/app/components/Footer";
 import { OurProcessSection } from "@/app/components/OurProcessSection";
+import NaturalAndHealth from "../components/compensation/NaturalAndHealth";
 
 export const metadata = {
   title: "Compensation Plan - Ravella",
@@ -14,8 +15,8 @@ export default function CompensationPlanPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <PageHeader title="Compensation Plan" breadcrumb="Home / Compensation Plan" />
-      <main className="px-6 lg:px-24 py-12">
-        <OurProcessSection />
+      <main className="">
+        <NaturalAndHealth />
       </main>
       <TestimonialSection />
       <Footer />
