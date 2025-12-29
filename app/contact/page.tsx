@@ -1,7 +1,8 @@
 import Header from "@/app/components/Header";
-import PageHeader from "@/app/components/PageHeader";
+import PageHeader, { TitlePart } from "@/app/components/PageHeader";
 import Footer from "../components/Footer";
 import RavellaContactSection from "../components/contact/ContactForm";
+import { GRADIENTS } from "../lib/gradient";
 
 export const metadata = {
   title: "Contact Us - Ravella",
@@ -12,8 +13,21 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHeader title="Get In Touch" breadcrumb="Home / Contact" />
-      <main className="px-6 lg:px-24 py-12">
+      <PageHeader
+        breadcrumb="Home / Contact"
+        titleParts={[
+          {
+            text: "Get ",
+            // className: "mr-2",
+          },
+          {
+            text: "In Touch",
+            className: "font-extrabold",
+            gradient: GRADIENTS.orangeToBrown,
+          },
+        ]}
+      />
+      <main className="">
         <RavellaContactSection />
       </main>
       <Footer />
