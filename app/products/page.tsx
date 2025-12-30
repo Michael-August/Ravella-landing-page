@@ -15,7 +15,7 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <PageHeader title="Explore Our Product Line" breadcrumb="Home / Products" />
-      <main className="">
+      <main className="py-10">
         <RavellaProductSection />
       </main>
       <TestimonialSection />

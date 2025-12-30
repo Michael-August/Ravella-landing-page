@@ -1,4 +1,5 @@
 import { ProcessStepCard } from "./ProcessStepCard";
+import { SectionBadge } from "./ui/SectionBadge";
 
 const steps = [
   {
@@ -33,36 +34,57 @@ const steps = [
 
 export const OurProcessSection = () => {
   return (
-    <section className="py-8 lg:py-10 bg-background">
-      <div className="container mx-auto px-6 lg:px-12">
+    <section className="py-8 sm:py-10 lg:py-16 px-4 sm:px-6 lg:px-12 bg-background">
+      <div className="">
+
         {/* Header */}
-        <div className="mb-12 text-center">
-          <div className="mb-6 inline-flex items-center rounded-full border border-border bg-ravella-brown/20 px-4 py-1.5">
-            <span className="text-[16px] font-semibold text-ravella-brown">
-              Our Process
-            </span>
+        <div className="mb-10 sm:mb-12 text-center">
+          {/* Badge */}
+          <div className="mb-3">
+            <SectionBadge>Our Process</SectionBadge>
           </div>
 
-          <h2 className="mt-6 mb-4 font-serif text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
+          {/* Heading */}
+          <h2
+            className="
+              font-serif font-semibold text-foreground leading-tight
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-5xl
+              mt-2 sm:mt-4
+              mb-1.5 sm:mb-3
+            "
+          >
             Join the Movement in{" "}
             <span className="text-primary">4 Steps</span>
           </h2>
 
-          <p className="mx-auto max-w-2xl text-base font-semibold leading-relaxed text-muted-foreground lg:text-lg">
+          {/* Description */}
+          <p
+            className="
+              mx-auto max-w-2xl text-muted-foreground leading-relaxed
+              text-sm
+              sm:text-base
+              md:text-lg
+              font-normal sm:font-medium
+            "
+          >
             Your journey to prosperity starts here. Don&apos;t wait—experience
             how simple, rewarding, and life-changing Ravella can be.
           </p>
         </div>
 
         {/* Staggered Grid */}
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-3 md:gap-2 md:grid-cols-3 items-start">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-2 items-start">
+
           {/* Left */}
           <div className="md:mt-24">
             <ProcessStepCard {...steps[0]} />
           </div>
 
           {/* Center */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 sm:gap-6">
             <ProcessStepCard {...steps[1]} />
             <ProcessStepCard {...steps[2]} />
           </div>
@@ -71,6 +93,7 @@ export const OurProcessSection = () => {
           <div className="md:mt-12">
             <ProcessStepCard {...steps[3]} />
           </div>
+
         </div>
       </div>
     </section>

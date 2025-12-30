@@ -8,7 +8,6 @@ import {
   Pill,
   Flame,
   Calendar,
-  Footprints,
   Stethoscope,
   Zap,
   Cross,
@@ -42,73 +41,94 @@ const ailments = [
 
 export default function RavellaProductSection() {
   return (
-    <section className="max-w-7xl mx-auto py-6 lg:py-12">
-      {/* Header Section */}
-      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
-        {/* Left Content */}
-        <div>
-          <SectionBadge>Ravella Ultra Solution</SectionBadge>
-
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#32241B] mb-6 leading-tight">
-            A premium herbal formulation designed to{" "}
-            <span className="text-[#FF9801]">
-              detoxify, strengthen, and restore balance to the body.
-            </span>
-          </h1>
-
-          <p className="mx-auto text-xl font-medium leading-relaxed text-muted-foreground">
-            At Ravella Ultra Solution, we harness the healing power of nature to
-            provide products that promote wellness, vitality, and overall
-            health. We believe in preventive care, natural remedies, and
-            holistic living as the foundation for a healthier and wealthier
-            society.
-          </p>
-        </div>
-
-        {/* Right Image Placeholder */}
-        {/* <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 lg:p-12 min-h-[400px] flex items-center justify-center">
-          <div className="text-center text-gray-400">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white flex items-center justify-center">
-              <Sparkles className="w-12 h-12" />
+    <section className="">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+        {/* Header Section */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 items-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+          {/* Left Content */}
+          <div className="w-full order-2 lg:order-1">
+            <div className="">
+              <SectionBadge>Ravella Ultra Solution</SectionBadge>
             </div>
-            <p className="text-sm">Replace with your image</p>
+
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-bold text-[#32241B] mb-4 sm:mb-5 md:mb-6 leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight">
+              A premium herbal formulation designed to{" "}
+              <span className="text-[#FF9801] block sm:inline mt-1 sm:mt-0">
+                detoxify, strengthen, and restore balance to the body.
+              </span>
+            </h1>
+
+            <p className="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-muted-foreground max-w-full sm:max-w-xl md:max-w-2xl">
+              At Ravella Ultra Solution, we harness the healing power of nature to
+              provide products that promote wellness, vitality, and overall
+              health. We believe in preventive care, natural remedies, and
+              holistic living as the foundation for a healthier and wealthier
+              society.
+            </p>
           </div>
-        </div> */}
-        {/* Image Card */}
-        <div className="relative">
-          <div className="relative overflow-hidden">
-            <img
-              src="/product-line.png"
-              alt="Ravella community"
-              //   className="w-full h-[360px] lg:h-[440px] object-contain"
-            />
+
+          {/* Right Image - order first on mobile, second on desktop */}
+          <div className="w-full order-1 lg:order-2">
+            <div className="relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg md:shadow-xl">
+              <img
+                src="/product-line.png"
+                alt="Ravella product lineup showing various health products"
+                className="w-full h-auto max-h-[280px] sm:max-h-[320px] md:max-h-[360px] lg:max-h-full xl:max-h-full object-cover object-center"
+                loading="lazy"
+              />
+              {/* Optional overlay for better text readability */}
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Ailments Section */}
-      <div>
-        <h2 className="text-xl font-sans font-medium leading-relaxed text-muted-foreground mb-4 lg:mb-8">
-          Our Product is Developed to fight the following Ailments
-        </h2>
+        {/* Ailments Section */}
+        <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed text-muted-foreground mb-4 sm:mb-6 md:mb-8 text-center lg:text-left">
+            Our Product is Developed to fight the following Ailments
+          </h2>
 
-         <div className="flex flex-wrap gap-3">
-          {ailments.map((ailment, index) => {
-            const Icon = ailment.icon;
+          <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 md:gap-4">
+            {ailments.map((ailment, index) => {
+              const Icon = ailment.icon;
 
-            return (
-              <div key={index} className="flex">
-                <div className="flex w-fit items-center gap-2 rounded-xl border border-gray-200 bg-gray-300/20 px-4 py-2 shadow-sm transition hover:shadow-md">
-                  <Icon className="h-5 w-5 text-black" />
+              return (
+                <div key={index} className="flex">
+                  <div className="flex w-fit items-center gap-1.5 sm:gap-2 md:gap-3 rounded-lg sm:rounded-xl border border-gray-200 bg-gray-300/20 px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] hover:border-[#FF9801]/30 active:scale-95">
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-black" />
 
-                  <span className="whitespace-nowrap text-sm font-semibold text-black">
-                    {ailment.label}
-                  </span>
+                    <span className="whitespace-nowrap text-xs sm:text-sm md:text-base font-medium sm:font-semibold text-black">
+                      {ailment.label}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          {/* Mobile view note for ailments that overflow */}
+          {/* <div className="lg:hidden mt-6 text-center">
+            <p className="text-xs sm:text-sm text-gray-500">
+              Scroll horizontally to see all ailments
+            </p>
+            <div className="flex justify-center mt-2">
+              <div className="w-12 h-1 bg-gray-300 rounded-full"></div>
+            </div>
+          </div> */}
         </div>
+
+        {/* Optional CTA Section */}
+        {/* <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 text-center lg:text-left">
+          <button
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#653424] px-6 py-3 sm:px-7 sm:py-3.5 md:px-8 md:py-4 font-semibold text-white transition-all duration-300 hover:bg-amber-900 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#653424] focus:ring-opacity-50 w-full sm:w-auto"
+            aria-label="Learn more about Ravella Ultra Solution"
+          >
+            <span className="text-sm sm:text-base md:text-lg">
+              Learn More About Our Products
+            </span>
+            <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 fill-current text-gray-300 flex-shrink-0" />
+          </button>
+        </div> */}
       </div>
     </section>
   );

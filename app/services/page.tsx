@@ -15,7 +15,7 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <PageHeader title="Explore Our Service Catalog" breadcrumb="Home / Services" />
-      <main className="px-6 lg:px-24 py-12">
+      <main className="py-10">
         <HealthWellnessSection />
       </main>
       <TestimonialSection />

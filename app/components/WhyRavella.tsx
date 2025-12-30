@@ -5,110 +5,131 @@ import {
   Share2,
   DollarSign,
   Users
-} from 'lucide-react';
+} from "lucide-react";
+import { SectionBadge } from "./ui/SectionBadge";
 
 const WhyRavella = () => {
   const features = [
     {
       icon: Brain,
       title: "AI Smart Placement",
-      description: "Intelligent algorithms analyze and optimize your network for maximum growth.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
+      description:
+        "Intelligent algorithms analyze and optimize your network for maximum growth.",
     },
     {
       icon: Trophy,
       title: "Gamified Dashboard",
-      description: "Track earnings, missions, and achievements in an engaging, game-like experience.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
+      description:
+        "Track earnings, missions, and achievements in an engaging, game-like experience.",
     },
     {
       icon: Wallet,
       title: "Web3 Wallet & Tokens",
-      description: "Own your rewards with blockchain-secured tokens and digital assets.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
+      description:
+        "Own your rewards with blockchain-secured tokens and digital assets.",
     },
     {
       icon: Share2,
       title: "SocialFi Income",
-      description: "Earn through social engagement, content creation, and community building.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
+      description:
+        "Earn through social engagement, content creation, and community building.",
     },
     {
       icon: DollarSign,
       title: "Flexible Withdrawals",
-      description: "Choose bank transfer, crypto, or $RAV tokens — your earnings, your way.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
+      description:
+        "Choose bank transfer, crypto, or $RAV tokens — your earnings, your way.",
     },
     {
       icon: Users,
       title: "Community-Owned Value",
-      description: "The people who build the value finally own the value. Together.",
-      iconColor: "text-ravella-brown",
-      bgColor: "bg-ravella-brown/20"
-    }
+      description:
+        "The people who build the value finally own the value. Together.",
+    },
   ];
 
   return (
-    <section className="py-8 lg:py-10 px-4 sm:px-6 lg:px-12 bg-ravella-brown/10 rounded-[70px]">
-      <div className="container mx-auto">
+    <section className="py-8 sm:py-10 lg:py-16 px-4 sm:px-6 lg:px-12 bg-ravella-brown/10 rounded-[70px]">
+      <div className="">
 
-        <div className="text-center max-w-3xl mx-auto mb-8 lg:mb-10">
-          {/* Badge */}
-          <div className="inline-flex items-center rounded-full bg-ravella-brown/20 px-4 py-1.5 mb-6 shadow-sm">
-            <span className="text-[17px] font-sans text-ravella-brown font-medium">Why Choose Us</span>
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <div className="mb-4">
+            <SectionBadge>Why Choose Us</SectionBadge>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-serif text-[#32241B] leading-tight mb-6">
-            Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">Ravella?</span>
+          <h2
+            className="
+              font-serif font-semibold text-[#32241B] leading-tight tracking-tight
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-5xl
+              mb-4 sm:mb-6
+            "
+          >
+            Why{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+              Ravella?
+            </span>
           </h2>
 
-          <p className="text-muted-foreground text-lg lg:text-xl leading-relaxed">
-            Because the world wants more than another MLM. They want freedom, predictability, technology, and real ownership.
-            This is MLM re-imagined, rebuilt for the next generation.
+          <p
+            className="
+              text-muted-foreground leading-relaxed
+              text-sm
+              sm:text-base
+              md:text-lg
+              lg:text-xl
+            "
+          >
+            Because the world wants more than another MLM. They want freedom,
+            predictability, technology, and real ownership. This is MLM
+            re-imagined, rebuilt for the next generation.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative bg-white p-8 border rounded-xl border-gray-100"
+              className="group relative bg-white p-6 sm:p-8 border rounded-xl border-gray-100"
             >
-              {/* Icon Container */}
-              <div className={`${feature.bgColor} w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
+              {/* Icon */}
+              <div className="bg-ravella-brown/20 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-ravella-brown" />
               </div>
 
-              {/* Content */}
-              <h3 className="text-2xl font-normal text-gray-900 mb-4">
+              {/* Title */}
+              <h3
+                className="
+                  text-lg
+                  sm:text-xl
+                  md:text-2xl
+                  font-medium
+                  text-gray-900
+                  mb-2 sm:mb-4
+                "
+              >
                 {feature.title}
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+
+              {/* Description */}
+              <p
+                className="
+                  text-gray-600 leading-relaxed
+                  text-sm
+                  sm:text-base
+                  md:text-lg
+                "
+              >
                 {feature.description}
               </p>
-
-              {/* Decorative Line */}
-              {/* <div className="absolute bottom-0 left-8 right-8 h-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent group-hover:via-accent transition-all duration-300"></div> */}
             </div>
           ))}
         </div>
 
-        {/* CTA Section */}
-        {/* <div className="text-center mt-20">
-          <button className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-primary to-accent rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-            <Wallet className="w-5 h-5 mr-2" />
-            Get Started Free
-          </button>
-          <p className="text-gray-500 mt-4 text-sm">
-            No credit card required • Join 50,000+ members
-          </p>
-        </div> */}
       </div>
     </section>
   );
