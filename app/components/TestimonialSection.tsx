@@ -117,7 +117,8 @@ const TestimonialSection = () => {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Real people. Measurable impact. Scalable outcomes across Africa.
+            Our claims are backed by a proven track record of satisfied users
+            across Nigeria and the world at large.
           </p>
         </div>
 

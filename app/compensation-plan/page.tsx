@@ -14,7 +14,16 @@ export default function CompensationPlanPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHeader title="Compensation Plan" breadcrumb="Home / Compensation Plan" />
+      <PageHeader title="" breadcrumb="Home / Compensation Plan" titleParts={[
+          {
+            text: "Compensation ",
+          },
+          {
+            text: "Plan",
+            className:
+              "bg-gradient-to-tr from-[#653424] to-[#FF9801] bg-clip-text text-transparent",
+          },
+        ]} />
       <main className="">
         <NaturalAndHealth />
       </main>

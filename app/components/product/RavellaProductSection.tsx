@@ -51,9 +51,15 @@ export default function RavellaProductSection() {
               <SectionBadge>Ravella Ultra Solution</SectionBadge>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-bold text-[#32241B] mb-4 sm:mb-5 md:mb-6 leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight">
+            <h1 className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-[40px]
+              xl:text-[50px]
+              text-[#32241B] mb-2 sm:mb-3 md:mb-4 lg:mb-5">
               A premium herbal formulation designed to{" "}
-              <span className="text-[#FF9801] block sm:inline mt-1 sm:mt-0">
+              <span className="text-[#FF9801] block sm:inline">
                 detoxify, strengthen, and restore balance to the body.
               </span>
             </h1>

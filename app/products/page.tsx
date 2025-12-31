@@ -14,7 +14,20 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHeader title="Explore Our Product Line" breadcrumb="Home / Products" />
+      <PageHeader
+        title=""
+        breadcrumb="Home / Products"
+        titleParts={[
+          {
+            text: "Explore Our ",
+          },
+          {
+            text: "Product Line",
+            className:
+              "bg-gradient-to-tr from-[#653424] to-[#FF9801] bg-clip-text text-transparent",
+          },
+        ]}
+      />
       <main className="py-10">
         <RavellaProductSection />
       </main>

@@ -6,13 +6,13 @@ const MISSION_VISION_STEPS = [
     number: 1,
     Icon: Package,
     title: "Our Mission",
-    description: "To transform lives through natural, curative products and empower individuals to achieve better health and financial independence.",
+    description: "To deliver trusted natural health  solutions that empower individuals to live healthier, happier, and more  fulfilling lives.",
   },
   {
     number: 2,
     Icon: Share2,
     title: "Our Vision",
-    description: "To create a world where everyone has access to holistic wellness solutions and the opportunity to build sustainable wealth.",
+    description: "To be a leading global brand in natural Wellness, recognized for innovation,  quality, and life-changing solutions.",
   },
 ];
 

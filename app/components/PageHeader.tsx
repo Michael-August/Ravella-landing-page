@@ -42,7 +42,13 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           </p>
         </div> */}
 
-        <h1 className="text-[22px] xs:text-2xl sm:text-[28px] md:text-4xl lg:text-[44px] xl:text-6xl 2xl:text-7xl font-bold text-[#3A241D] leading-[1.2] xs:leading-snug sm:leading-normal md:leading-tight lg:leading-[1.15] xl:leading-tight 2xl:leading-[1.1]">
+        <h3 className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-[43px]
+              xl:text-[53px]
+              text-[#32241B]">
           {titleParts ? (
             <>
               {titleParts.map((part, index) => (
@@ -52,11 +58,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({
                   style={
                     part.gradient
                       ? {
-                        background: part.gradient,
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                        backgroundClip: "text",
-                      }
+                          background: part.gradient,
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                          backgroundClip: "text",
+                        }
                       : undefined
                   }
                 >
@@ -67,7 +73,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           ) : (
             title
           )}
-        </h1>
+        </h3>
       </div>
     </section>
   );

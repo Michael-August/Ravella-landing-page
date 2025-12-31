@@ -18,7 +18,20 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHeader title="About Ravella?" breadcrumb="Home / About" />
+      <PageHeader
+        title=""
+        breadcrumb="Home / About"
+        titleParts={[
+          {
+            text: "About ",
+          },
+          {
+            text: "Ravella?",
+            className:
+              "bg-gradient-to-tr from-[#653424] to-[#FF9801] bg-clip-text text-transparent",
+          },
+        ]}
+      />
       <main className="">
         <WhoWeAreSection />
         <OurMission />

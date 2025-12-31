@@ -13,7 +13,6 @@ const CommunityImpactSection = () => {
     <section className="relative bg-white py-10 sm:py-14 lg:py-20 xl:py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
           {/* LEFT: Content */}
           <div>
             {/* Badge */}
@@ -22,25 +21,30 @@ const CommunityImpactSection = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
+            <h2
+              className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
               text-2xl
               sm:text-3xl
               md:text-4xl
-              lg:text-[48px]
+              lg:text-[43px]
               xl:text-[53px]
-              text-[#32241B]">
-              Let's Build
-              {/* <br className="hidden lg:block" /> */}
-              <span className="text-[#FF9801] block sm:inline"> Communities Together</span>
+              text-[#32241B]"
+            >
+              Let's{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">
+                Build <br className="hidden xl:block" /> Communities Together
+              </span>
             </h2>
 
             {/* Description */}
-            <p className="mt-3 sm:mt-4 max-w-xl text-muted-foreground leading-relaxed
+            <p
+              className="mt-3 sm:mt-4 max-w-xl text-muted-foreground leading-relaxed
               text-sm
               sm:text-base
               md:text-lg
               lg:text-xl
-              font-normal sm:font-medium">
+              font-normal sm:font-medium"
+            >
               At Ravellacare, we go beyond business—we're on a mission to uplift
               lives, restore hope, and empower communities. Every product
               purchase, every act of kindness, every partnership contributes to
@@ -48,10 +52,12 @@ const CommunityImpactSection = () => {
             </p>
 
             {/* Subheading */}
-            <h3 className="mt-5 sm:mt-6 font-semibold tracking-wide text-muted-foreground
+            <h3
+              className="mt-5 sm:mt-6 font-semibold tracking-wide text-muted-foreground
               text-base
               sm:text-lg
-              md:text-xl">
+              md:text-xl"
+            >
               Our Pledge to Impact
             </h3>
 
@@ -88,7 +94,6 @@ const CommunityImpactSection = () => {
               />
             </div>
           </div>
-
         </div>
       </div>
     </section>

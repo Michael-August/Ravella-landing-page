@@ -18,12 +18,11 @@ export default function ContactPage() {
         titleParts={[
           {
             text: "Get ",
-            // className: "mr-2",
           },
           {
             text: "In Touch",
-            className: "font-extrabold",
-            gradient: GRADIENTS.orangeToBrown,
+            className:
+              "bg-gradient-to-tr from-[#653424] to-[#FF9801] bg-clip-text text-transparent",
           },
         ]}
       />

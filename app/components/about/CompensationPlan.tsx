@@ -34,15 +34,22 @@ const CompensationPlan = () => {
             <SectionBadge>Compensation Plan</SectionBadge>
           </div>
 
-          <h2 className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
-              text-2xl
-              sm:text-3xl
-              md:text-4xl
-              lg:text-[48px]
-              xl:text-[53px]
-              text-[#32241B]"> We Offer 15 Unique
-            Earning <span className="text-[#653424] block sm:inline">Opportunities</span>
-          </h2>
+         <h2
+              className="
+                font-bold text-[#32241B] leading-tight
+                text-2xl
+                sm:text-3xl
+                md:text-4xl
+                lg:text-5xl
+                mb-3 sm:mb-4
+              "
+            >
+              We Offer 15 Unique
+              <br />{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">
+                Earning Opportunities
+              </span>
+            </h2>
 
           <p className="mx-auto max-w-full sm:max-w-xl md:max-w-2xl text-base sm:text-lg md:text-xl font-medium sm:font-semibold text-muted-foreground px-2 sm:px-0 mt-3 sm:mt-4">
             Every step you take is a reward. Live Healthy with our products,

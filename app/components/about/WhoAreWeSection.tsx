@@ -13,17 +13,23 @@ const WhoWeAreSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-start lg:items-end">
           {/* Left: Heading */}
           <div className="flex flex-col justify-end">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[53px] font-display font-semibold leading-tight sm:leading-tight md:leading-none text-[#32241B] tracking-tight">
+            <h2 className="font-display font-semibold leading-tight sm:leading-tight md:leading-none tracking-tight
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-[40px]
+              xl:text-[50px]
+              text-[#32241B]">
               Ravella Ultra Solution Limited is a pioneering health and wellness
-              company dedicated to{" "}
-              <span className="text-[#FF9801] block sm:inline">
-                transforming lives through natural, curative products.
+              {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801] block sm:inline">
+                company dedicated to transforming lives through natural, curative products.
               </span>
             </h2>
           </div>
 
           {/* Right: Description */}
-          <div className="text-muted-foreground font-medium sm:font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed sm:leading-relaxed md:leading-relaxed space-y-4 sm:space-y-6">
+          <div className="text-muted-foreground font-medium sm:font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-relaxe space-y-4 sm:space-y-6">
             <p>
               With over 60 years of combined industry expertise, we stand at the
               intersection of science, nature, and opportunity. We believe
