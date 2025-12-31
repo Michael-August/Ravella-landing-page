@@ -4,7 +4,10 @@ import { SectionBadge } from "./ui/SectionBadge";
 
 const About = () => {
   return (
-    <section id="about" className="py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
+    <section
+      id="about"
+      className="py-8 sm:py-10 md:py-12 lg:py-14 bg-background"
+    >
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-20 items-start lg:items-center">
           {/* Left Content */}
@@ -14,12 +17,11 @@ const About = () => {
               <SectionBadge>About Us</SectionBadge>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-serif text-[#32241B] leading-tight sm:leading-tight tracking-tight mb-4 sm:mb-5 md:mb-6">
-              Building Better Lives
-              <br />
-              Through <span className="text-accent">Wellness And</span>
-              <br />
-              <span className="text-accent">Opportunity</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-bold font-serif text-[#32241B] leading-tight sm:leading-tight tracking-tight mb-4 sm:mb-5 md:mb-6">
+              Building Better Lives {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">
+                Through Wellness And Opportunity
+              </span>
             </h2>
 
             <p className="text-muted-foreground font-medium sm:font-semibold text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-7 md:mb-8 max-w-full sm:max-w-md">
@@ -48,7 +50,7 @@ const About = () => {
                 alt="Woman with natural wellness elements"
                 className="w-full h-[200px] sm:h-[250px] md:h-[320px] lg:h-full xl:h-full object-cover object-center"
                 loading="lazy"
-              // sizes="(max-width: 1024px) 100vw, 50vw"
+                // sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               {/* Optional play button overlay for video */}

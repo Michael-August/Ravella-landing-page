@@ -1,6 +1,7 @@
 import React from "react";
 import { Package, Share2, Clock, Trophy, CreditCard, Play } from "lucide-react";
 import { SectionBadge } from "./ui/SectionBadge";
+import { Button } from "./ui/button";
 
 const STEPS = [
   {
@@ -8,35 +9,35 @@ const STEPS = [
     Icon: Package,
     title: "Use the Products",
     description:
-      "Your health journey begins. Every usage earns points and progresses your rank.",
+      "Experience Ravella’s classic wellness solutions. Every use fuels your health, earns points, and moves you up the ranks.",
   },
   {
     number: 2,
     Icon: Share2,
-    title: "Share the Products",
+    title: "Share & Grow",
     description:
-      "Spread the Ravella story and grow your network organically.",
+      "Invite others who value health and opportunity. As your community grows, your earning power multiplies—naturally.",
   },
   {
     number: 3,
     Icon: Clock,
-    title: "Earn Through AI",
+    title: "Earn Smarter With AI",
     description:
-      "AI analyzes your structure, predicts averages, and helps maximize rewards.",
+      "Our AI system analyzes your structure, predicts outcomes, and optimizes your rewards—so you earn more with less stress.",
   },
   {
     number: 4,
     Icon: Trophy,
-    title: "Level Up",
+    title: "Level Up & Get Rewarded",
     description:
-      "Unlock badges, ranks, travel rewards, bonuses, and exclusive gift packages.",
+      "Unlock ranks, badges, bonuses, travel rewards, exclusive gifts, and elite benefits as you progress.",
   },
   {
     number: 5,
     Icon: CreditCard,
     title: "Withdraw Your Way",
     description:
-      "Choose bank transfer, Ravella wallet, USDT/USDC, or SPAY token.",
+      "Access your earnings anytime via bank transfer, USDT/USDC Wallet, get rewarded with Ravella token—fast and flexible.",
   },
 ];
 
@@ -74,7 +75,9 @@ const StepsRow = ({
   cols: string;
   connectorInset?: string;
 }) => (
-  <div className={`relative grid ${cols} gap-6 sm:gap-8 mb-10 sm:mb-12 lg:mb-16`}>
+  <div
+    className={`relative grid ${cols} gap-6 sm:gap-8 mb-10 sm:mb-12 lg:mb-16`}
+  >
     <div
       className={`hidden md:block absolute top-[96px] lg:top-[110px] h-px bg-white/30 ${connectorInset}`}
     />
@@ -91,7 +94,7 @@ const HowItWorksSection = () => {
       <section className="relative mt-6 sm:mt-8 lg:mt-12 rounded-[40px] sm:rounded-[50px] lg:rounded-[70px] bg-[#814C31] px-4 sm:px-6 lg:px-12 pt-10 sm:pt-12 lg:pt-16 pb-10 sm:pb-12">
         <div className="mb-10 sm:mb-12 lg:mb-16 text-center">
           <div className="mb-2 sm:mb-4">
-            <SectionBadge variant="automated">How It Works</SectionBadge>
+            <SectionBadge variant="automated">How Ravella Works</SectionBadge>
           </div>
 
           <h1
@@ -104,8 +107,7 @@ const HowItWorksSection = () => {
               mb-3 sm:mb-4
             "
           >
-            Simple. Smart.{" "}
-            <span className="text-[#FF9801]">Automated.</span>
+            Simple. Smart. <span className="text-[#FF9801]">Automated.</span>
           </h1>
 
           <p
@@ -118,12 +120,16 @@ const HowItWorksSection = () => {
               px-4
             "
           >
-            Five simple steps to transform your health and wealth journey.
+            Five powerful steps to transform your health, income, and
+            lifestyle—without complexity.
           </p>
         </div>
 
         <div className="mx-auto max-w-6xl">
-          <StepsRow steps={STEPS.slice(0, 3)} cols="grid-cols-1 md:grid-cols-3" />
+          <StepsRow
+            steps={STEPS.slice(0, 3)}
+            cols="grid-cols-1 md:grid-cols-3"
+          />
           <StepsRow
             steps={STEPS.slice(3)}
             cols="grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto"
@@ -150,9 +156,10 @@ const HowItWorksSection = () => {
               "
             >
               We Offer 15 Unique
-              <br />
-              Earning{" "}
-              <span className="text-[#653424]">Opportunities</span>
+              <br />{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">
+                Earning Opportunities
+              </span>
             </h2>
 
             <p
@@ -172,9 +179,18 @@ const HowItWorksSection = () => {
 
           <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              ["Direct Referral Rewards", "Instant rewards when you share the Ravella story."],
-              ["Team Growth Income", "Income from your organization intelligently placed by AI."],
-              ["Rank Bonuses", "Achieve new heights and unlock massive bonuses."],
+              [
+                "Direct Referral Rewards",
+                "Instant rewards when you share the Ravella story.",
+              ],
+              [
+                "Team Growth Income",
+                "Income from your organization intelligently placed by AI.",
+              ],
+              [
+                "Rank Bonuses",
+                "Achieve new heights and unlock massive bonuses.",
+              ],
             ].map(([title, desc], i) => (
               <div
                 key={title}
@@ -198,10 +214,14 @@ const HowItWorksSection = () => {
           </div>
 
           <div className="mt-8 sm:mt-10 text-center">
-            <button className="inline-flex items-center gap-2 rounded-lg bg-[#653424] px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white transition-colors hover:bg-amber-900 w-full sm:w-auto">
+            <Button
+              variant="brown"
+              size="lg"
+              className="gap-2 rounded-lg w-full sm:w-auto"
+            >
               View Full Compensation Plan
               <Play className="h-4 w-4 fill-current text-gray-300" />
-            </button>
+            </Button>
           </div>
         </div>
       </section>

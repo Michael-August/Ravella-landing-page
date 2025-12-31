@@ -12,7 +12,7 @@ const CoreValues = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-serif text-[#32241B] leading-tight sm:leading-tight mb-3 sm:mb-4 tracking-tight">
-            Our <span className="text-accent">Core Value</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">Our Core Value</span>
           </h2>
 
           <p className="text-muted-foreground font-medium sm:font-semibold text-sm sm:text-base md:text-lg lg:text-lg max-w-full sm:max-w-xl md:max-w-2xl mx-auto px-2 sm:px-0">

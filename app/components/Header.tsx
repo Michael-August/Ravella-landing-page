@@ -117,7 +117,7 @@ const Header = () => {
             </a>
           ))}
 
-          <Button className="mt-6 w-full max-w-xs bg-[#5A2D1B] text-white rounded-2xl gap-2">
+          <Button className="mt-6 w-full max-w-xs bg-[#5A2D1B] font-bold text-white rounded-2xl gap-2">
             Login / Back Office
             <Play className="h-4 w-4 text-gray-400 fill-current" />
           </Button>

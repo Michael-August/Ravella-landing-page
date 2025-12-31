@@ -14,37 +14,37 @@ const WhyRavella = () => {
       icon: Brain,
       title: "AI Smart Placement",
       description:
-        "Intelligent algorithms analyze and optimize your network for maximum growth.",
+        "Our intelligent AI algorithm ensures optimal placement for maximum earning potential in your network.",
     },
     {
       icon: Trophy,
       title: "Gamified Dashboard",
       description:
-        "Track earnings, missions, and achievements in an engaging, game-like experience.",
+        "Track your progress with an engaging, game-like experience. Earn badges, climb leaderboards, and unlock achievements.",
     },
     {
       icon: Wallet,
       title: "Web3 Wallet & Tokens",
       description:
-        "Own your rewards with blockchain-secured tokens and digital assets.",
+        "Seamlessly manage your earnings with our integrated Web3 wallet and get rewarded with Ravella Tokens/Points.",
     },
     {
       icon: Share2,
       title: "SocialFi Income",
       description:
-        "Earn through social engagement, content creation, and community building.",
+        "Turn your social connections into income streams. Build community and get rewarded for your influence.",
     },
     {
       icon: DollarSign,
       title: "Flexible Withdrawals",
       description:
-        "Choose bank transfer, crypto, or $RAV tokens — your earnings, your way.",
+        "Withdraw your earnings anyway you want with multiple payment options including crypto and bank transfers.",
     },
     {
       icon: Users,
       title: "Community-Owned Value",
       description:
-        "The people who build the value finally own the value. Together.",
+        "Be part of a community that shares in the success. The people who build the value finally own the value.",
     },
   ];
 
@@ -68,9 +68,9 @@ const WhyRavella = () => {
               mb-4 sm:mb-6
             "
           >
-            Why{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
-              Ravella?
+            Built for {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">
+              the Future
             </span>
           </h2>
 
@@ -83,9 +83,7 @@ const WhyRavella = () => {
               lg:text-xl
             "
           >
-            Because the world wants more than another MLM. They want freedom,
-            predictability, technology, and real ownership. This is MLM
-            re-imagined, rebuilt for the next generation.
+            Ravella fuses innovation, community, and true ownership to create predictable growth and lasting freedom. MLM, re-imagined for tomorrow.
           </p>
         </div>
 

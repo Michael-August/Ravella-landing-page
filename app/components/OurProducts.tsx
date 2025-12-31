@@ -27,7 +27,7 @@ const OurProduct = () => {
                 mb-4 sm:mb-6
               "
             >
-              100% <span className="text-accent">Organic</span>
+              100% <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">Organic</span>
             </h2>
 
             {/* Description */}

@@ -47,7 +47,7 @@ export const OurServicesSection = () => {
               mb-2 sm:mb-3
             "
           >
-            Our <span className="text-primary">Services</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#32241B] to-[#FF9801]">Services</span>
           </h2>
 
           <p

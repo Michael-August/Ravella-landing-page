@@ -57,7 +57,7 @@ export const OurProcessSection = () => {
             "
           >
             Join the Movement in{" "}
-            <span className="text-primary">4 Steps</span>
+            <span className="text-[#FF9801]">4 Steps</span>
           </h2>
 
           {/* Description */}

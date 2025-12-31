@@ -36,11 +36,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="mb-2 xs:mb-3">
+        {/* <div className="mb-2 xs:mb-3">
           <p className="text-[#6B5450] text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium tracking-wide xs:tracking-normal">
             {breadcrumb}
           </p>
-        </div>
+        </div> */}
 
         <h1 className="text-[22px] xs:text-2xl sm:text-[28px] md:text-4xl lg:text-[44px] xl:text-6xl 2xl:text-7xl font-bold text-[#3A241D] leading-[1.2] xs:leading-snug sm:leading-normal md:leading-tight lg:leading-[1.15] xl:leading-tight 2xl:leading-[1.1]">
           {titleParts ? (
