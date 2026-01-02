@@ -167,7 +167,7 @@ const Hero = () => {
 					transition={{ delay: 1, duration: 0.8 }}
 					className="relative mt-16 sm:mt-20 lg:mt-24 font-display"
 				>
-					<div className="relative flex flex-wrap justify-between max-w-3xl gap-8 sm:gap-12 lg:gap-16 border-t border-white/20 pt-6 sm:pt-8">
+					<div className="relative flex justify-between max-w-3xl gap-8 sm:gap-12 lg:gap-16 border-t border-white/20 pt-6 sm:pt-8">
 						<div>
 							<p className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl">
 								15+
