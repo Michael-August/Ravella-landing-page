@@ -67,14 +67,14 @@ const Hero = () => {
 	const slide = heroSlides[currentSlide];
 
 	return (
-		<section className="relative min-h-[100svh] overflow-hidden">
+		<section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-t from-[#814C31]/70 via-[#32241B]/30 to-transparent backdrop-blur-[6px]">
 			{/* Background image carousel */}
-			<AnimatePresence mode="wait">
+			<AnimatePresence mode="sync">
 				<motion.div
 					key={currentSlide}
 					initial={{ x: "100%", scale: 1.05 }}
 					animate={{ x: 0, scale: 1 }}
-					exit={{ x: "-100%", scale: 0.95 }}
+					exit={{ x: "-100%", scale: 1.05 }}
 					transition={{ duration: 0.7, ease: "easeInOut" }}
 					className="absolute inset-0"
 				>
