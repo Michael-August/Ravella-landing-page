@@ -3,12 +3,15 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Play } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const HEADER_HEIGHT = 88; // increased from 64
 
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+	const router = useRouter();
 
 	// Track scroll state
 	useEffect(() => {
@@ -74,6 +77,12 @@ const Header = () => {
 					{/* Desktop CTA */}
 					<div className="hidden lg:flex">
 						<Button
+							onClick={() =>
+								window.open(
+									"https://member.ravellaultrasolution.com/signin",
+									"_blank",
+								)
+							}
 							size="lg"
 							className="bg-[#653424] xl:text-[17px] lg:text-[15px] text-[13px] text-white rounded-xl px-6 gap-2"
 						>
