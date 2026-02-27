@@ -131,18 +131,15 @@ const Header = () => {
 						</a>
 					))}
 
-					<Button
-						onClick={() =>
-							window.open(
-								"https://member.ravellaultrasolution.com/signin",
-								"_blank",
-							)
-						}
-						className="mt-6 w-full max-w-xs bg-[#5A2D1B] font-bold text-white rounded-2xl gap-2"
+					<a
+						href="https://member.ravellaultrasolution.com/signin"
+						target="_blank"
 					>
-						Login / Back Office
-						<Play className="h-4 w-4 text-gray-400 fill-current" />
-					</Button>
+						<Button className="mt-6 w-full max-w-xs bg-[#5A2D1B] font-bold text-white rounded-2xl gap-2">
+							Login / Back Office
+							<Play className="h-4 w-4 text-gray-400 fill-current" />
+						</Button>
+					</a>
 				</nav>
 			</div>
 
