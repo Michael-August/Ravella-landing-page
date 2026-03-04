@@ -76,19 +76,24 @@ const Header = () => {
 
 					{/* Desktop CTA */}
 					<div className="hidden lg:flex">
-						<Button
-							onClick={() =>
-								window.open(
-									"https://member.ravellaultrasolution.com/signin",
-									"_blank",
-								)
-							}
-							size="lg"
-							className="bg-[#653424] xl:text-[17px] lg:text-[15px] text-[13px] text-white rounded-xl px-6 gap-2"
+						<a
+							href="https://member.ravellaultrasolution.com/signin"
+							target="_blank"
 						>
-							Login / Back Office
-							<Play className="h-4 w-4 text-gray-200 fill-current" />
-						</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										"https://member.ravellaultrasolution.com/signin",
+										"_blank",
+									)
+								}
+								size="lg"
+								className="bg-[#653424] xl:text-[17px] lg:text-[15px] text-[13px] text-white rounded-xl px-6 gap-2"
+							>
+								Login / Back Office
+								<Play className="h-4 w-4 text-gray-200 fill-current" />
+							</Button>
+						</a>
 					</div>
 
 					{/* Mobile Menu Toggle */}
